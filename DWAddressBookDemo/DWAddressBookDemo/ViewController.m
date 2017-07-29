@@ -22,7 +22,7 @@
 
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    DWAddressBook *addressbook = [[DWAddressBook alloc] initWithControllerTitle:@"通讯录" azSort:YES resultBlock:^(NSString *name, NSString *mobNumber) {
+    DWAddressBook *addressbook = [[DWAddressBook alloc] initWithControllerTitle:@"通讯录" resultBlock:^(NSString *name, NSString *mobNumber) {
         
     } failure:^{
         NSLog(@"授权失败");
@@ -32,6 +32,7 @@
     addressbook.naviBgColor = [UIColor blueColor];
     addressbook.cancelBtnColor = [UIColor orangeColor];
     addressbook.cancelBtnFont = [UIFont systemFontOfSize:22];
+    addressbook.showTotalNumber = YES;
 //    addressbook.showTotalNumber = YES;
 //    addressbook.cancelBtnTitle = @"确定";
     addressbook.indexBGColor = [UIColor orangeColor];

@@ -50,7 +50,7 @@
         cell.userInteractionEnabled = NO;
         NSMutableArray *arrM = [NSMutableArray array];
         [self.cellModelKeysArr enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-            [arrM addObject:[NSString stringWithFormat:@"%ld", [self.cellModelDict[obj] count]]];
+            [arrM addObject:[NSString stringWithFormat:@"%lu", [self.cellModelDict[obj] count]]];
         }];
         UILabel *all = [[UILabel alloc] initWithFrame:cell.contentView.bounds];
         all.text = [NSString stringWithFormat:@"%@位联系人", [arrM valueForKeyPath:@"@sum.self"]];

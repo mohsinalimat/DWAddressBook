@@ -49,9 +49,8 @@
 /**
  初始化
  @param title 标题
- @param azSort 是否使用A～Z排序方式
  @return self
  */
-- (instancetype)initWithControllerTitle:(NSString *)title azSort:(BOOL)azSort resultBlock:(void(^)(NSString *name, NSString *mobNumber))resultBlock failure:(void(^)())failure;
+- (instancetype)initWithControllerTitle:(NSString *)title resultBlock:(void(^)(NSString *name, NSString *mobNumber))resultBlock failure:(void(^)())failure;
 
 @end

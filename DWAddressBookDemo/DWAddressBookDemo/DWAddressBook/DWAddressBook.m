@@ -12,6 +12,7 @@
 
 @interface DWAddressBook ()
 @property(nonatomic, strong) DWContactController *contactController;
+@property(nonatomic, copy) NSString *auth;
 @end
 
 @implementation DWAddressBook
@@ -25,22 +26,23 @@
     [PPGetAddressBook requestAddressBookAuthorization];
 }
 
-- (instancetype)initWithControllerTitle:(NSString *)title azSort:(BOOL)azSort resultBlock:(void(^)(NSString *name, NSString *mobNumber))resultBlock failure:(void(^)())failure {
+- (instancetype)initWithControllerTitle:(NSString *)title resultBlock:(void(^)(NSString *name, NSString *mobNumber))resultBlock failure:(void(^)())failure {
     _contactController = [[DWContactController alloc] init];
     _contactController.title = title;
     self = [super initWithRootViewController:_contactController];
     _contactController.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"取消" style:UIBarButtonItemStylePlain target:self action:@selector(cancelButtonClick)];
     __weak __typeof(self)weakSelf = self;
-    if (azSort) {
         [PPGetAddressBook getOrderAddressBook:^(NSDictionary<NSString *,NSArray *> *addressBookDict, NSArray *nameKeys) {
             _contactController.cellModelDict = addressBookDict;
             _contactController.cellModelKeysArr = nameKeys;
             [_contactController.tableView reloadData];
         } authorizationFailure:^{
             failure();
-            [weakSelf dismissViewControllerAnimated:NO completion:nil];
+            [_contactController.navigationController setNavigationBarHidden:YES animated:YES];
+            _contactController.navigationController.view.backgroundColor = [UIColor clearColor];
+            _contactController.view.backgroundColor = [UIColor clearColor];
+            [weakSelf cancelButtonClick];
         }];
-    }
     return self;
 }
 
