@@ -60,7 +60,7 @@
         return cell;
     }
     PPPersonModel *people = [self.cellModelDict[self.cellModelKeysArr[indexPath.section]] objectAtIndex:indexPath.row];
-    UIImageView *headerimg = [[UIImageView alloc] initWithImage:people.headerImage?people.headerImage:[UIImage imageNamed:@"defult"]];
+    UIImageView *headerimg = [[UIImageView alloc] initWithImage:people.headerImage?people.headerImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"resources.bundle/defult@2x.png" ofType:nil]]];
     headerimg.frame = CGRectMake(15, 7.5, 45, 45);
     [cell.contentView addSubview:headerimg];
     headerimg.layer.cornerRadius = 45/2;
