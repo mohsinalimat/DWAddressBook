@@ -7,34 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		351421181F2AF4150088FBB6 /* DWContactController.m in Sources */ = {isa = PBXBuildFile; fileRef = 351421171F2AF4150088FBB6 /* DWContactController.m */; };
-		351421201F2B13EE0088FBB6 /* PPAddressBookHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 3514211A1F2B13EE0088FBB6 /* PPAddressBookHandle.m */; };
-		351421211F2B13EE0088FBB6 /* PPGetAddressBook.m in Sources */ = {isa = PBXBuildFile; fileRef = 3514211C1F2B13EE0088FBB6 /* PPGetAddressBook.m */; };
-		351421221F2B13EE0088FBB6 /* PPPersonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3514211E1F2B13EE0088FBB6 /* PPPersonModel.m */; };
-		351421241F2B14090088FBB6 /* defult.png in Resources */ = {isa = PBXBuildFile; fileRef = 351421231F2B14090088FBB6 /* defult.png */; };
-		3514213D1F2D6BEE0088FBB6 /* DWNumberView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3514213C1F2D6BEE0088FBB6 /* DWNumberView.m */; };
 		352F129D1F2AE7790096F676 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 352F129C1F2AE7790096F676 /* main.m */; };
 		352F12A01F2AE7790096F676 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 352F129F1F2AE7790096F676 /* AppDelegate.m */; };
 		352F12A31F2AE7790096F676 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 352F12A21F2AE7790096F676 /* ViewController.m */; };
 		352F12A61F2AE7790096F676 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 352F12A41F2AE7790096F676 /* Main.storyboard */; };
 		352F12A81F2AE7790096F676 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 352F12A71F2AE7790096F676 /* Assets.xcassets */; };
 		352F12AB1F2AE7790096F676 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 352F12A91F2AE7790096F676 /* LaunchScreen.storyboard */; };
-		352F12B51F2AE84C0096F676 /* DWAddressBook.m in Sources */ = {isa = PBXBuildFile; fileRef = 352F12B41F2AE84C0096F676 /* DWAddressBook.m */; };
+		35F11B591F2DCC7B00E24D20 /* defult.png in Resources */ = {isa = PBXBuildFile; fileRef = 35F11B4B1F2DCC7B00E24D20 /* defult.png */; };
+		35F11B5A1F2DCC7B00E24D20 /* DWAddressBook.m in Sources */ = {isa = PBXBuildFile; fileRef = 35F11B4D1F2DCC7B00E24D20 /* DWAddressBook.m */; };
+		35F11B5B1F2DCC7B00E24D20 /* DWContactController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35F11B4F1F2DCC7B00E24D20 /* DWContactController.m */; };
+		35F11B5C1F2DCC7B00E24D20 /* DWNumberView.m in Sources */ = {isa = PBXBuildFile; fileRef = 35F11B511F2DCC7B00E24D20 /* DWNumberView.m */; };
+		35F11B5D1F2DCC7B00E24D20 /* PPAddressBookHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 35F11B531F2DCC7B00E24D20 /* PPAddressBookHandle.m */; };
+		35F11B5E1F2DCC7B00E24D20 /* PPGetAddressBook.m in Sources */ = {isa = PBXBuildFile; fileRef = 35F11B551F2DCC7B00E24D20 /* PPGetAddressBook.m */; };
+		35F11B5F1F2DCC7B00E24D20 /* PPPersonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 35F11B571F2DCC7B00E24D20 /* PPPersonModel.m */; };
+		35F11B621F2DCE0E00E24D20 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35F11B611F2DCE0E00E24D20 /* AddressBook.framework */; };
+		35F11B641F2DCE3B00E24D20 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35F11B631F2DCE3B00E24D20 /* UIKit.framework */; };
+		35F11B661F2DCE4100E24D20 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35F11B651F2DCE4100E24D20 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		351421161F2AF4150088FBB6 /* DWContactController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWContactController.h; sourceTree = "<group>"; };
-		351421171F2AF4150088FBB6 /* DWContactController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWContactController.m; sourceTree = "<group>"; };
-		351421191F2B13EE0088FBB6 /* PPAddressBookHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPAddressBookHandle.h; sourceTree = "<group>"; };
-		3514211A1F2B13EE0088FBB6 /* PPAddressBookHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPAddressBookHandle.m; sourceTree = "<group>"; };
-		3514211B1F2B13EE0088FBB6 /* PPGetAddressBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPGetAddressBook.h; sourceTree = "<group>"; };
-		3514211C1F2B13EE0088FBB6 /* PPGetAddressBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPGetAddressBook.m; sourceTree = "<group>"; };
-		3514211D1F2B13EE0088FBB6 /* PPPersonModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPPersonModel.h; sourceTree = "<group>"; };
-		3514211E1F2B13EE0088FBB6 /* PPPersonModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPPersonModel.m; sourceTree = "<group>"; };
-		3514211F1F2B13EE0088FBB6 /* PPSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPSingleton.h; sourceTree = "<group>"; };
-		351421231F2B14090088FBB6 /* defult.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = defult.png; sourceTree = "<group>"; };
-		3514213B1F2D6BEE0088FBB6 /* DWNumberView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWNumberView.h; sourceTree = "<group>"; };
-		3514213C1F2D6BEE0088FBB6 /* DWNumberView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWNumberView.m; sourceTree = "<group>"; };
 		352F12981F2AE7790096F676 /* DWAddressBookDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DWAddressBookDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		352F129C1F2AE7790096F676 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		352F129E1F2AE7790096F676 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -45,8 +36,23 @@
 		352F12A71F2AE7790096F676 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		352F12AA1F2AE7790096F676 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		352F12AC1F2AE7790096F676 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		352F12B31F2AE84C0096F676 /* DWAddressBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWAddressBook.h; sourceTree = "<group>"; };
-		352F12B41F2AE84C0096F676 /* DWAddressBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWAddressBook.m; sourceTree = "<group>"; };
+		35F11B4B1F2DCC7B00E24D20 /* defult.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = defult.png; sourceTree = "<group>"; };
+		35F11B4C1F2DCC7B00E24D20 /* DWAddressBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWAddressBook.h; sourceTree = "<group>"; };
+		35F11B4D1F2DCC7B00E24D20 /* DWAddressBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWAddressBook.m; sourceTree = "<group>"; };
+		35F11B4E1F2DCC7B00E24D20 /* DWContactController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWContactController.h; sourceTree = "<group>"; };
+		35F11B4F1F2DCC7B00E24D20 /* DWContactController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWContactController.m; sourceTree = "<group>"; };
+		35F11B501F2DCC7B00E24D20 /* DWNumberView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWNumberView.h; sourceTree = "<group>"; };
+		35F11B511F2DCC7B00E24D20 /* DWNumberView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWNumberView.m; sourceTree = "<group>"; };
+		35F11B521F2DCC7B00E24D20 /* PPAddressBookHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPAddressBookHandle.h; sourceTree = "<group>"; };
+		35F11B531F2DCC7B00E24D20 /* PPAddressBookHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPAddressBookHandle.m; sourceTree = "<group>"; };
+		35F11B541F2DCC7B00E24D20 /* PPGetAddressBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPGetAddressBook.h; sourceTree = "<group>"; };
+		35F11B551F2DCC7B00E24D20 /* PPGetAddressBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPGetAddressBook.m; sourceTree = "<group>"; };
+		35F11B561F2DCC7B00E24D20 /* PPPersonModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPPersonModel.h; sourceTree = "<group>"; };
+		35F11B571F2DCC7B00E24D20 /* PPPersonModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPPersonModel.m; sourceTree = "<group>"; };
+		35F11B581F2DCC7B00E24D20 /* PPSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPSingleton.h; sourceTree = "<group>"; };
+		35F11B611F2DCE0E00E24D20 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		35F11B631F2DCE3B00E24D20 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		35F11B651F2DCE4100E24D20 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +60,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35F11B661F2DCE4100E24D20 /* Foundation.framework in Frameworks */,
+				35F11B641F2DCE3B00E24D20 /* UIKit.framework in Frameworks */,
+				35F11B621F2DCE0E00E24D20 /* AddressBook.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +74,7 @@
 			children = (
 				352F129A1F2AE7790096F676 /* DWAddressBookDemo */,
 				352F12991F2AE7790096F676 /* Products */,
+				35F11B601F2DCE0D00E24D20 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,7 +89,7 @@
 		352F129A1F2AE7790096F676 /* DWAddressBookDemo */ = {
 			isa = PBXGroup;
 			children = (
-				352F12B21F2AE78E0096F676 /* DWAddressBook */,
+				35F11B4A1F2DCC7B00E24D20 /* DWAddressBook */,
 				352F129E1F2AE7790096F676 /* AppDelegate.h */,
 				352F129F1F2AE7790096F676 /* AppDelegate.m */,
 				352F12A11F2AE7790096F676 /* ViewController.h */,
@@ -101,25 +111,35 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		352F12B21F2AE78E0096F676 /* DWAddressBook */ = {
+		35F11B4A1F2DCC7B00E24D20 /* DWAddressBook */ = {
 			isa = PBXGroup;
 			children = (
-				351421231F2B14090088FBB6 /* defult.png */,
-				351421191F2B13EE0088FBB6 /* PPAddressBookHandle.h */,
-				3514211A1F2B13EE0088FBB6 /* PPAddressBookHandle.m */,
-				3514211B1F2B13EE0088FBB6 /* PPGetAddressBook.h */,
-				3514211C1F2B13EE0088FBB6 /* PPGetAddressBook.m */,
-				3514211D1F2B13EE0088FBB6 /* PPPersonModel.h */,
-				3514211E1F2B13EE0088FBB6 /* PPPersonModel.m */,
-				3514211F1F2B13EE0088FBB6 /* PPSingleton.h */,
-				352F12B31F2AE84C0096F676 /* DWAddressBook.h */,
-				352F12B41F2AE84C0096F676 /* DWAddressBook.m */,
-				351421161F2AF4150088FBB6 /* DWContactController.h */,
-				351421171F2AF4150088FBB6 /* DWContactController.m */,
-				3514213B1F2D6BEE0088FBB6 /* DWNumberView.h */,
-				3514213C1F2D6BEE0088FBB6 /* DWNumberView.m */,
+				35F11B4B1F2DCC7B00E24D20 /* defult.png */,
+				35F11B4C1F2DCC7B00E24D20 /* DWAddressBook.h */,
+				35F11B4D1F2DCC7B00E24D20 /* DWAddressBook.m */,
+				35F11B4E1F2DCC7B00E24D20 /* DWContactController.h */,
+				35F11B4F1F2DCC7B00E24D20 /* DWContactController.m */,
+				35F11B501F2DCC7B00E24D20 /* DWNumberView.h */,
+				35F11B511F2DCC7B00E24D20 /* DWNumberView.m */,
+				35F11B521F2DCC7B00E24D20 /* PPAddressBookHandle.h */,
+				35F11B531F2DCC7B00E24D20 /* PPAddressBookHandle.m */,
+				35F11B541F2DCC7B00E24D20 /* PPGetAddressBook.h */,
+				35F11B551F2DCC7B00E24D20 /* PPGetAddressBook.m */,
+				35F11B561F2DCC7B00E24D20 /* PPPersonModel.h */,
+				35F11B571F2DCC7B00E24D20 /* PPPersonModel.m */,
+				35F11B581F2DCC7B00E24D20 /* PPSingleton.h */,
 			);
 			path = DWAddressBook;
+			sourceTree = SOURCE_ROOT;
+		};
+		35F11B601F2DCE0D00E24D20 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				35F11B651F2DCE4100E24D20 /* Foundation.framework */,
+				35F11B631F2DCE3B00E24D20 /* UIKit.framework */,
+				35F11B611F2DCE0E00E24D20 /* AddressBook.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,7 +202,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				352F12AB1F2AE7790096F676 /* LaunchScreen.storyboard in Resources */,
-				351421241F2B14090088FBB6 /* defult.png in Resources */,
+				35F11B591F2DCC7B00E24D20 /* defult.png in Resources */,
 				352F12A81F2AE7790096F676 /* Assets.xcassets in Resources */,
 				352F12A61F2AE7790096F676 /* Main.storyboard in Resources */,
 			);
@@ -195,15 +215,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35F11B5F1F2DCC7B00E24D20 /* PPPersonModel.m in Sources */,
 				352F12A31F2AE7790096F676 /* ViewController.m in Sources */,
-				351421211F2B13EE0088FBB6 /* PPGetAddressBook.m in Sources */,
-				351421221F2B13EE0088FBB6 /* PPPersonModel.m in Sources */,
-				351421201F2B13EE0088FBB6 /* PPAddressBookHandle.m in Sources */,
 				352F12A01F2AE7790096F676 /* AppDelegate.m in Sources */,
-				351421181F2AF4150088FBB6 /* DWContactController.m in Sources */,
-				352F12B51F2AE84C0096F676 /* DWAddressBook.m in Sources */,
+				35F11B5C1F2DCC7B00E24D20 /* DWNumberView.m in Sources */,
+				35F11B5B1F2DCC7B00E24D20 /* DWContactController.m in Sources */,
+				35F11B5A1F2DCC7B00E24D20 /* DWAddressBook.m in Sources */,
+				35F11B5D1F2DCC7B00E24D20 /* PPAddressBookHandle.m in Sources */,
+				35F11B5E1F2DCC7B00E24D20 /* PPGetAddressBook.m in Sources */,
 				352F129D1F2AE7790096F676 /* main.m in Sources */,
-				3514213D1F2D6BEE0088FBB6 /* DWNumberView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
