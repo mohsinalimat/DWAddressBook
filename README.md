@@ -14,3 +14,4 @@
         }];
         [self presentViewController:addressbook animated:YES completion:nil];
 
+![gif](https://github.com/CoderDwang/DWAddressBook/blob/master/demo.gif)
