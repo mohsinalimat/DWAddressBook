@@ -19,4 +19,6 @@
 /** 是否显示联系人总和/在最后一行cell中显示 */
 @property(nonatomic, assign) BOOL showTotalNumber;
 
+@property(nonatomic, copy) void (^selectMobNumber)(NSString *name, NSString *mobNumber);
+
 @end

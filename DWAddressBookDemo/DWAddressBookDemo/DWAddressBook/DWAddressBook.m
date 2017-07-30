@@ -26,12 +26,16 @@
     [PPGetAddressBook requestAddressBookAuthorization];
 }
 
-- (instancetype)initWithControllerTitle:(NSString *)title resultBlock:(void(^)(NSString *name, NSString *mobNumber))resultBlock failure:(void(^)())failure {
+- (instancetype)initWithResultBlock:(void(^)(NSString *name, NSString *mobNumber))resultBlock failure:(void(^)())failure {
+    __weak __typeof(self)weakSelf = self;
     _contactController = [[DWContactController alloc] init];
-    _contactController.title = title;
+    _contactController.title = @"通讯录";
     self = [super initWithRootViewController:_contactController];
     _contactController.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"取消" style:UIBarButtonItemStylePlain target:self action:@selector(cancelButtonClick)];
-    __weak __typeof(self)weakSelf = self;
+    _contactController.selectMobNumber = ^(NSString *name, NSString *mobNumber) {
+        resultBlock(name, mobNumber);
+        [weakSelf cancelButtonClick];
+    };
         [PPGetAddressBook getOrderAddressBook:^(NSDictionary<NSString *,NSArray *> *addressBookDict, NSArray *nameKeys) {
             _contactController.cellModelDict = addressBookDict;
             _contactController.cellModelKeysArr = nameKeys;
@@ -53,6 +57,10 @@
 - (void)setCancelBtnTitle:(NSString *)cancelBtnTitle {
     _cancelBtnTitle = cancelBtnTitle;
     _contactController.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:cancelBtnTitle style:UIBarButtonItemStylePlain target:self action:@selector(cancelButtonClick)];
+}
+
+- (void)setNaviTitle:(NSString *)naviTitle {
+    _contactController.title = naviTitle;
 }
 
 - (void)setNaviTitleFont:(UIFont *)naviTitleFont {

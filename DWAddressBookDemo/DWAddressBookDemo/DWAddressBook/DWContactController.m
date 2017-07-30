@@ -8,9 +8,10 @@
 
 #import "DWContactController.h"
 #import "PPPersonModel.h"
+#import "DWNumberView.h"
 
 @interface DWContactController ()<UITableViewDelegate, UITableViewDataSource>
-
+@property(nonatomic, strong) DWNumberView *numberView;
 @end
 
 @implementation DWContactController
@@ -106,7 +107,34 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    
+   PPPersonModel *people = [self.cellModelDict[self.cellModelKeysArr[indexPath.section]] objectAtIndex:indexPath.row];
+    if (people.mobileArray.count > 1) {
+        self.tableView.scrollEnabled = NO;
+        UIView *bgView = [[UIView alloc] initWithFrame:self.view.bounds];
+        bgView.backgroundColor = [UIColor colorWithRed:1/255 green:1/255 blue:1/255 alpha:0.4];
+        [self.view addSubview:bgView];
+        [bgView addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(bgViewDidClick:)]];
+        _numberView = [[DWNumberView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width/3*2, people.mobileArray.count*44) style:UITableViewStylePlain];
+        _numberView.numberArr = people.mobileArray;
+        [self.view addSubview:_numberView];
+        _numberView.center = bgView.center;
+        __weak __typeof(self)weakSelf = self;
+        _numberView.didSelectMobNumber = ^(NSString *number) {
+            if (weakSelf.selectMobNumber) {
+                weakSelf.selectMobNumber(people.name, number);
+            }
+        };
+    }else {
+        if (self.selectMobNumber) {
+            self.selectMobNumber(people.name, people.mobileArray.lastObject);
+        }
+    }
+}
+
+- (void)bgViewDidClick:(UITapGestureRecognizer *)tap {
+        self.tableView.scrollEnabled = YES;
+        [_numberView removeFromSuperview];
+         [tap.view removeFromSuperview];
 }
 
 - (NSArray *)cellModelKeysArr {

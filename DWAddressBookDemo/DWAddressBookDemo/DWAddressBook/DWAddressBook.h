@@ -16,6 +16,9 @@
 
 @interface DWAddressBook : UINavigationController
 
+/** 标题 */
+@property(nonatomic, copy) NSString *naviTitle;
+
 /** 标题颜色 */
 @property(nonatomic, strong) UIColor *naviTitleColor;
 
@@ -48,9 +51,8 @@
 
 /**
  初始化
- @param title 标题
  @return self
  */
-- (instancetype)initWithControllerTitle:(NSString *)title resultBlock:(void(^)(NSString *name, NSString *mobNumber))resultBlock failure:(void(^)())failure;
+- (instancetype)initWithResultBlock:(void(^)(NSString *name, NSString *mobNumber))resultBlock failure:(void(^)())failure;
 
 @end
