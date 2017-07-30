@@ -6,14 +6,6 @@
 //  Copyright © 2017年 dwang. All rights reserved.
 //
 
-#ifdef DEBUG
-#define NSLog(...) NSLog(__VA_ARGS__)
-#define debugMethod() NSLog(@"%s", __func__)
-#else
-#define NSLog(...)
-#define debugMethod()
-#endif
-
 #import "ViewController.h"
 #import "DWAddressBook.h"
 
