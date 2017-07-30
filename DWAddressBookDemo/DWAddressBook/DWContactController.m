@@ -112,8 +112,14 @@
         self.tableView.scrollEnabled = NO;
         UIView *bgView = [[UIView alloc] initWithFrame:self.view.bounds];
         bgView.backgroundColor = [UIColor colorWithRed:1/255 green:1/255 blue:1/255 alpha:0.4];
+        
+        CATransition *animation =[CATransition animation];
+        [animation setDuration:0.5];
+        [animation setType:kCATransitionFade];
+        [animation setTimingFunction:[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn]];
+        [[self.view layer]addAnimation:animation forKey:kCATransitionFade];
         [self.view addSubview:bgView];
-        [bgView addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(bgViewDidClick:)]];
+    [bgView addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(bgViewDidClick:)]];
         _numberView = [[DWNumberView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width/3*2, people.mobileArray.count*44) style:UITableViewStylePlain];
         _numberView.numberArr = people.mobileArray;
         [self.view addSubview:_numberView];
